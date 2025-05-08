@@ -1,0 +1,47 @@
+@use "01-base/file-header";
+
+@use "dependencies" as *;
+
+/* Categories 01 to 03 are the basics. */
+@use "01-base/fonts";
+
+@use "02-generic/normalize";
+@use "02-generic/reset";
+@use "02-generic/clearings";
+@use "02-generic/helpers";
+
+/* Category 04 can contain any default HTML element. Do not add classes here, just give the elements some basic styles. */
+@use "03-elements/headings";
+@use "03-elements/misc";
+@use "03-elements/links";
+@use "03-elements/lists";
+@use "03-elements/forms";
+@use "03-elements/quotes";
+@use "03-elements/media";
+@use "03-elements/tables";
+
+/* Category 05 is all about adjusting the default block styles to the given layout. */
+@use "04-blocks/blocks";
+
+/* Category 06 contains all "bigger" components which contain elements of the previous two categories like header, footer, page template, single template, comments section, archives, ... */
+@use "05-components/header";
+@use "05-components/footer";
+@use "05-components/wrapper";
+@use "05-components/entry";
+@use "05-components/page-templates";
+@use "05-components/pages";
+@use "05-components/post-types";
+@use "05-components/search";
+@use "05-components/comments";
+@use "05-components/nav";
+@use "05-components/pagination";
+@use "05-components/widgets";
+@use "05-components/gravity-forms";
+@use "05-components/nav-social";
+@use "05-components/tabs";
+
+/* Category 07 is for any utility classes that are not assigned to a specific component. */
+@use "06-utilities/a11y";
+@use "06-utilities/color-palette";
+@use "06-utilities/animations";
+@use "06-utilities/print";
