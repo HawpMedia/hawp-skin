@@ -81,7 +81,8 @@ function hm_child_theme_whitelabel($whitelabel) {
 }
 //add_filter('hawp_whitelabel_settings', 'hm_child_theme_whitelabel');
 
-add_action('acf/init', function() {
+function add_acf_custom_settings() {
+
     // Debug log
     if (defined('WP_DEBUG') && WP_DEBUG) {
         error_log('HAWP Child Theme: Registering custom settings field group');
@@ -129,4 +130,6 @@ add_action('acf/init', function() {
         $field_group = acf_get_field_group('group_custom_settings');
         error_log('HAWP Child Theme: Field group exists after registration: ' . ($field_group !== false ? 'true' : 'false'));
     }
-}, 5);
+
+}
+//add_action('acf/init', 'add_acf_custom_settings', 5);
