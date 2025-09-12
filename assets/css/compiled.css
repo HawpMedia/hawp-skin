@@ -1481,12 +1481,12 @@ input[type=submit]:focus {
 .gform_wrapper.gravity-theme .gform_fields {
   margin: 0;
 }
-.gform_wrapper.gravity-theme .gfield {
+.gform_wrapper.gravity-theme .gfield:not(.gfield_visibility_hidden) {
   position: relative;
   z-index: 1;
   list-style: none;
 }
-.gform_wrapper.gravity-theme .gfield select {
+.gform_wrapper.gravity-theme .gfield:not(.gfield_visibility_hidden) select {
   appearance: none;
   -webkit-appearance: none;
 }
